@@ -13,7 +13,14 @@ const author = require("./routes/author");
 const cors=require("cors")
 const path = require('path');
 
-app.use(cors());
+app.use(cors(
+  {
+  origin: [
+    'http://localhost:5173', // for local development
+    'https://hamro-book-jnbfwd5ok-paras-mahatos-projects.vercel.app', // production
+    'https://hamro-book.vercel.app' // your custom domain
+  ]}
+));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true }))
