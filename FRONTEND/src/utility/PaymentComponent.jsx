@@ -27,8 +27,8 @@ const PaymentComponent = ({ cartItems, totalAmount }) => {
     }));
 
     const paymentData = {
-      return_url: "http://localhost:5173/payment-success",
-      website_url: "https:http://localhost:5173",
+      return_url: "https://hamro-book.vercel.app/payment-success",
+      website_url: "https://hamro-book.vercel.app",
       amount: totalAmount * 100, // Convert to paisa
       purchase_order_id: `order_${Date.now()}`,
       purchase_order_name: "Book Purchase",
