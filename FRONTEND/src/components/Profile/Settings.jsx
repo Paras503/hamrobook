@@ -1,7 +1,7 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://backend-bice-sigma-99.vercel.app";
 
 const Settings = () => {
   const [Value, setValue] = useState({ address: "" });
