@@ -1,7 +1,7 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
 import BookCard from "../BookCard";
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://backend-bice-sigma-99.vercel.app";
 
 const Favourites = () => {
   const [FavouriteBooks, setFavouriteBooks] = useState();
